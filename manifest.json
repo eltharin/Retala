@@ -1,21 +1,22 @@
 {
 	"browser_action": {
 		"browser_style": true,
-		"default_popup": "tabs.html",
+		"default_popup": "./tabs/tabs.html",
 		"default_title": "Session tabs"
 	},
 	"sidebar_action": {
 		"browser_style": true,
 		"default_title": "Session tabs",
-		"default_panel": "sidebar.html",
+		"default_panel": "panels/manage.html",
+		"open_at_install": false,
 		"default_icon": {
-			"19": "icons/window19.png",
-			"38": "icons/window38.png"
+			"48": "icons/savetabs-48.png",
+			"96": "icons/savetabs-100.png"
 		}
 	},
 	"icons": {
-		"48": "icons/window.png",
-		"96": "icons/window@2x.png"
+		"48": "icons/savetabs-48.png",
+		"96": "icons/savetabs-100.png"
 	},
 	"content_scripts": [
 		{
@@ -33,7 +34,7 @@
 	},
 	"description": "Ajoute une bordure rouge pleine sur l'ensemble des pages web mozilla.org.",
 	"icons": {
-		"48": "icons/border-48.png"
+		"48": "icons/savetabs-48.png"
 	},
 	"manifest_version": 2,
 	"name": "Session tabs",

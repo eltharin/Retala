@@ -22,7 +22,14 @@ addEvent('click', '.remove_window', (e) => {
 });
 
 addEvent('click', '#open_sidebar', (e) => {
+	browser.sidebarAction.setPanel({ 
+		panel: browser.runtime.getURL("../panels/manage.html"),
+		windowId: windowId
+	});
+	
+
 	browser.sidebarAction.open();
+
 });
 
 addEvent('click', '#test', (e) => {
