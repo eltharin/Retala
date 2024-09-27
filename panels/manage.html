@@ -1,34 +1,78 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="tabs.css" />
-	<style>#sidebar-box {
-  max-width: 40% !important;
-  min-width: 500px !important;
-}
-</style>
-  </head>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="../common/style.css" />
+	</head>
+	<body>
+		<nav>
+		  <img src="../icons/addsession.png" id="add_session">
+		</nav>
 
-  <body>
-		Tout a fairess
-		
 		<table id="sessions_table">
-		<thead>
-		<tr>
-			<th>category</th>
-			<th>name</th>
-			<th>color</th>
-		</tr>
-		</thead>
-		<tbody>
-		</tbody>
+			<thead>
+				<tr>
+					<th>category</th>
+					<th>name</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
 		</table>
 
-		<button id="get" type="button">Debug</button>
+		<div class="spacer"></div>
 
-	<script src="../common.js"></script>
-    <script src="../storage.js" ></script>
-    <script src="sidebar.js"></script>
-  </body>
+		<div id="forms">
+			<nav>
+				<img src="../icons/close.png" id="close_forms">
+			</nav>
+			<form id="form_add_session">
+
+				<div>
+					<label for="category">Category</label>
+					<input type="text" name="category" />
+				</div>
+				<div>
+					<label for="name">Name</label>
+					<input type="text" name="name" />
+				</div>
+				<div>
+					<label for="color">Color</label>
+					<input type="color" name="color" />
+				</div>
+				<div>
+					<button class="submit">Add</button>
+				</div>
+			</form>
+
+			<form id="form_edit_session">
+				<input type="hidden" name="id" />
+				<div>
+					<label for="category">Category</label>
+					<input type="text" name="category" />
+				</div>
+				<div>
+					<label for="name">Name</label>
+					<input type="text" name="name" />
+				</div>
+				<div>
+					<label for="color">Color</label>
+					<input type="color" name="color" />
+				</div>
+				<div>
+					<button class="submit">Edit</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="spacer"></div>
+
+		<button id="debug" type="button">Debug</button>
+
+		<script src="../common.js"></script>
+		<script src="../storage.js" ></script>
+		<script src="../browser.js" ></script>
+		<script src="sidebar.js"></script>
+	</body>
 </html>

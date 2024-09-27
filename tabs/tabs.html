@@ -1,31 +1,42 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="tabs.css" />
-  </head>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="../common/style.css" />
+		<style>
 
-  <body>
-		Tout a faire
-		
+			.filteredCategory{display:none;}
+			.filteredName{display:none;}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<img src="../icons/opensidebar-200.png" id="open_sidebar">
+		</nav>
 		<table id="sessions_table">
-		<thead>
-		<tr>
-			<th>category</th>
-			<th>name</th>
-			<th>color</th>
-			<th>Add/Remove</th>
-		</tr>
-		</thead>
-		<tbody>
-		</tbody>
+			<thead>
+			<tr>
+				<th>category</th>
+				<th>name</th>
+				<th>+/-</th>
+			</tr>
+			<tr class="filters">
+				<th>
+					<select id="filter_categories"></select>
+				</th>
+				<th>
+					<input id="filter_names">
+				</th>
+				<th></th>
+			</tr>
+			</thead>
+			<tbody>
+			</tbody>
 		</table>
-		<button id="open_sidebar" type="button">Open</button>
-		<button id="open_sidebar2" type="button">Open</button>
-		<button id="test" type="button">test</button>
 
-	<script src="../common.js"></script>
-    <script src="../storage.js" ></script>
-    <script src="tabs.js"></script>
-  </body>
+		<script src="../common.js"></script>
+		<script src="../storage.js" ></script>
+		<script src="../browser.js" ></script>
+		<script src="tabs.js"></script>
+	</body>
 </html>

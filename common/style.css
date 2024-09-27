@@ -1,0 +1,34 @@
+body{
+    margin : 10px;
+}
+
+nav {
+    text-align:right;
+}
+
+nav img {
+    height:30px;
+    width:30px;
+}
+
+.spacer{
+    height:10px;
+}
+
+#forms{
+    border : 1px solid grey;
+}
+
+#forms > form{
+    display:table;
+}
+
+#forms > form > div{
+    display:table-row;
+}
+
+#forms > form > div > label,
+#forms > form > div > input{
+    display:table-cell;
+    margin: 3px;
+}
